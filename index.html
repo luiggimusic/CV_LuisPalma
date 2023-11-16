@@ -1,0 +1,71 @@
+<!--
+  Nombre: Luis Arnaldo Palma
+  Fecha: 27/10/2023
+  Módulo: Lenguajes de marcas y sistemas de gestión de información
+    - UD1 Intercambio de información en la Web (10%)
+    - LMSGI01 Tarea evaluativa 2. Primer sitio web con formato (50%)
+
+  Enlace a Autoevaluación:
+    https://docs.google.com/document/d/1G1y7F-iPkdWbarbENAcY8QvPRQJIGnhRMOy2oOdfn1E/edit?usp=sharing
+
+  Enlace a vídeo de autoevaluación
+    https://youtu.be/E5yoLJKSuqE?si=jZMJ9FpuSNA5mlc3
+  Descripcion de la tarea:  
+    El objetivo de esta actividad es aplicar formato al currículum web creado en la Tarea Evaluativa 1
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="cv_luis_palma">
+    <title>Luis Palma</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="foto_perfil" src="img/foto-luis.jpg" alt="Foto Luis">
+        <p>Luis Palma</p>
+
+        <!-- Uso de lista desordenada y enlace a con las otras páginas webs -->
+        <ul class="enlaces">
+            <li class="pagina_seleccionada"><a href="index.html">Perfil personal</a></li>
+            <li><a href="laboral.html">Experiencia laboral</a></li>
+            <li><a href="formacion.html">Formación</a></li>
+            <li><a href="conocimientos.html">Conocimientos - Habilidades</a></li>
+            <li><a href="aficiones.html">Aficiones</a></li>
+            <li><a href="documents/luis-palma-cv-(es).pdf" target="_blank">Ver CV (PDF)</a></li>
+            <!-- Enlace a documento pdf-->
+        </ul>
+    </header>
+
+    <h1>perfil personal</h1>
+    <section>
+        <p class="perfil">Mi objetivo es reorientar mi carrera profesional al área IT y mejorar mis habilidades en
+            programación.<br>
+            Para ello, cuento con amplia experiencia laboral en planning, proporcionándome gran capacidad analítica y
+            atención a los detalles.<br>
+            Me he desempeñado como scheduler, orientado a la mejora continua y el análisis de datos.<br>
+            Tengo 9 años de experiencia en distintos sectores. Dedicado al control de producción, gestión de provisión
+            de
+            materias primas y optimización de los procesos de planificación.<br>
+            Estoy en busca de nuevos retos y oportunidades de crecimiento; siempre motivado a <span
+                class="texto_resaltado">aprender</span>, <span class="texto_resaltado">crecer</span> y
+            <span class="texto_resaltado">alcanzar resultados</span></span>.
+        </p> <!-- Uso de SPAN -->
+
+        <h4 class="perfil">Datos personales</h4>
+
+        <!-- Uso de lista desordenada -->
+        <ul id="ul_perfil">
+            <li class="perfil datos">Nombre: Luis</li>
+            <li class="perfil datos">Apellido: Palma</li>
+            <li class="perfil datos">Dirección: Zubiaurrenea Kalea, 3 - Usurbil</li>
+            <li class="perfil datos">Email: lpalma@birt.eus</li>
+        </ul>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+/*
+  Nombre: Luis Arnaldo Palma
+  Fecha: 27/10/2023
+  Módulo: Lenguajes de marcas y sistemas de gestión de información
+    - UD1 Intercambio de información en la Web (10%)
+    - LMSGI01 Tarea evaluativa 2. Primer sitio web con formato (50%)
+
+  Enlace a Autoevaluación:
+    https://docs.google.com/document/d/1G1y7F-iPkdWbarbENAcY8QvPRQJIGnhRMOy2oOdfn1E/edit?usp=sharing
+
+  Enlace a vídeo de autoevaluación
+    https://youtu.be/E5yoLJKSuqE?si=jZMJ9FpuSNA5mlc3
+  Descripcion de la tarea:  
+    El objetivo de esta actividad es aplicar formato al currículum web creado en la Tarea Evaluativa 1
+*/
+
+body {
+    background-color: #ededed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* Definiendo este margen, se desplaza el contenido hacia abajo equivalente al sitio que necesitará el encabezado */
+    margin-top: 250px;
+}
+
+header {
+    /* Con la propiedad linear-gradient se consigue el degradado del color en el encabezado. 
+    Propiedad CSS diferente de las que se describen en los apuntes. */
+    background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(121, 33, 9, 1) 23%, rgba(152, 175, 180, 1) 94%);
+    margin-left: -10px;
+    border-left: solid #b18025 20px;
+    width: 100%;
+
+    /* En las siguientes 2 líneas se establece que el header quede fijo mediante la propiedad "position: fixed" 
+    y posicionándolo en el extremo superior a través de la propiedad "top: 0px" desde el pixel 0.
+    Propiedad CSS diferente de las que se describen en los apuntes. */
+    position: fixed;
+    top: 0px;
+}
+
+header p {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 10px;
+    margin-left: 350px;
+}
+
+section {
+    width: 90%;
+    margin-left: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.enlaces {
+    background-color: #191919;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.enlaces li {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Se utiliza la propiedad "hover" para añadir acciones del ratón. Al pasar sobre los enlaces cambian de color.
+Propiedad CSS diferente de las que se describen en los apuntes. */
+.enlaces li:hover {
+    background-color: #b18025;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.enlaces li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.foto_perfil {
+    width: 150px;
+    display: inline-block;
+    border: solid 2px white;
+    position: absolute;
+    top: 15px;
+    left: 140px;
+}
+
+.pagina_seleccionada {
+    background-color: #b18025;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.texto_resaltado {
+    color: red;
+    font-weight: bold;
+}
+
+#ul_perfil {
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+.perfil {
+    display: block;
+    background-color: #c8c1c1;
+    padding-left: 10px;
+    line-height: 35px;
+    border-radius: 5px;
+}
+
+.datos {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 45%;
+}
+
+/* Estilos experiencia laboral */
+table {
+    width: 1450px;
+    border: solid 1px #191919;
+    border-radius: 5px;
+}
+
+th {
+    background-color: #c8c1c1;
+    border-radius: 5px 5px 0 0;
+}
+
+#empresa {
+    width: 150px;
+}
+
+#cargo_actividades {
+    width: 1100px;
+}
+
+.bordes_verticales {
+    border-left: solid 1px #191919;
+    border-right: solid 1px #191919;
+}
+
+.borde_inferior {
+    border-bottom: solid 1px #191919;
+}
+
+.otras_experiencias,
+.experiencia_profesional {
+    margin-top: 50px;
+}
+
+caption {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos formacion */
+.formacion {
+    display: block;
+    background-color: #c8c1c1;
+    margin-top: 5px;
+    padding-left: 10px;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+.formacion:hover {
+    background-color: #b8a7888e;
+    zoom: 1.01;
+}
+
+.link_webs,
+#demo {
+    /* "text-decoration: none", suprime los subrayados de los links */
+    text-decoration: none;
+    font-weight: bold;
+    color: #b18025;
+}
+
+.link_webs:hover {
+    color: #ffffff;
+}
+
+.estilo_video {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.contenedor_video {
+    text-align: center;
+}
+
+/* Estilos conocimientos-habilidades */
+.conocimientos {
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 10px;
+    line-height: 35px;
+    border-radius: 5px;
+    width: 700px;
+    font-weight: bold;
+    background-color: #c8c1c1;
+}
+
+.logos {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.logos img {
+    margin-left: 60px;
+}
+
+.skills {
+    display: inline-block;
+    border: solid 2px white;
+    position: absolute;
+    top: 290px;
+    left: 800px;
+}
+
+/* Estilos aficiones */
+#lista_aficiones {
+    padding-left: 0;
+}
+
+.aficiones {
+    background-color: #c8c1c1;
+    list-style: none;
+    margin: auto;
+    margin-top: 15px;
+    width: 500px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.aficiones:hover {
+    border: solid 2px #b18025;
+}

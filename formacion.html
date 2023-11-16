@@ -1,0 +1,70 @@
+<!--
+  Nombre: Luis Arnaldo Palma
+  Fecha: 27/10/2023
+  Módulo: Lenguajes de marcas y sistemas de gestión de información
+    - UD1 Intercambio de información en la Web (10%)
+    - LMSGI01 Tarea evaluativa 2. Primer sitio web con formato (50%)
+
+  Enlace a Autoevaluación:
+    https://docs.google.com/document/d/1G1y7F-iPkdWbarbENAcY8QvPRQJIGnhRMOy2oOdfn1E/edit?usp=sharing
+
+  Enlace a vídeo de autoevaluación
+    https://youtu.be/E5yoLJKSuqE?si=jZMJ9FpuSNA5mlc3
+  Descripcion de la tarea:  
+    El objetivo de esta actividad es aplicar formato al currículum web creado en la Tarea Evaluativa 1
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formación</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="foto_perfil" src="img/foto-luis.jpg" alt="Foto Luis">
+        <p>Luis Palma</p>
+        <ul class="enlaces">
+            <li><a href="index.html">Perfil personal</a></li>
+            <li><a href="laboral.html">Experiencia laboral</a></li>
+            <li class="pagina_seleccionada"><a href="formacion.html">Formación</a></li>
+            <li><a href="conocimientos.html">Conocimientos - Habilidades</a></li>
+            <li><a href="aficiones.html">Aficiones</a></li>
+            <li><a href="documents/luis-palma-cv-(es).pdf" target="_blank">Ver CV (PDF)</a></li>
+            <!-- Enlace a documento pdf-->
+        </ul>
+    </header>
+    <h1>formación</h1>
+
+    <section>
+        <!-- Los centros de formación tienen enlace a sus páginas web y abren en pestañas nuevas -->
+        <ul>
+            <li class="formacion"><a class="link_webs" href="https://www.birt.eus/" target="_blank">BirtLH</a> -
+                Desarrollo de Aplicaciones Web (09/2022 -
+                actualidad)</li>
+            <li class="formacion"><a class="link_webs" href="https://www.digitalhouse.com/" target="_blank">DIGITAL
+                    HOUSE</a> - Desarrollo web full stack
+                (05/2022 - 11/2022)</li>
+            <li class="formacion"><a class="link_webs" href="https://www.ceupe.com/" target="_blank">CENTRO EUROPEO DE
+                    POSTGRADO</a> - Diplomado en Control de
+                Producción y Gestión Logística - (12/2021 - 04/2022)</li>
+            <li class="formacion"><a class="link_webs" href="https://www.victory.nsw.edu.au/" target="_blank">VICTORY
+                    INSTITUTE OF VOCATIONAL EDUCATION PTY
+                    LTD</a> - Diploma of Screen and Media - (01/2017 - 12/2018)
+                <p id="demo">Demo reel</p>
+
+                <div class="contenedor_video">
+                    <!-- Se añade enlace a video local del demo reel -->
+                    <video class="estilo_video" controls>
+                        <source src="vid/Demo-reel-Luis-Palma.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
